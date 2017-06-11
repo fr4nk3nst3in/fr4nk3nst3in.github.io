@@ -31,7 +31,7 @@
         		// Iterate over the JSON object
        		for (var i = 0, len = ds.length; i < len; i++) {
        		 		tableData.push({
-       		 			"date" : ds[i].id,
+       		 			//"date" : ds[i].name,
                 		"open":  ds[i]['1. open'],
                  		"high":  ds[i]['2. high'],
                 		"low":   ds[i]['3. low'],
