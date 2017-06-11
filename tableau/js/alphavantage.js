@@ -25,7 +25,7 @@
 
     myConnector.getData = function (table, doneCallback) {
 		$.getJSON("http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=RHT&apikey=KIO2ZPVEEHLOKGAZ", function(resp) {
-        		var ds = resp.'Time Series (Daily)', tableData = [];
+        		var ds = resp.["Time Series (Daily)"], tableData = [];
 //TODO: Implement reading data and copy to tableDate
 
         		// Iterate over the JSON object
