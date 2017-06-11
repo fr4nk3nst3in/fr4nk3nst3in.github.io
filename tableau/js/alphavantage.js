@@ -25,20 +25,20 @@
 
     myConnector.getData = function (table, doneCallback) {
 		$.getJSON("http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=RHT&apikey=KIO2ZPVEEHLOKGAZ", function(resp) {
-        		var feat = resp.features,
-            	tableData = [];
+        		var ds = resp."Time Series (Daily)", tableData = [];
 //TODO: Implement reading data and copy to tableDate
 
         		// Iterate over the JSON object
-//       		for (var i = 0, len = Time Series (Daily).length; i < len; i++) {
-//            		tableData.push({
+       		for (var i = 0, len = ds.length; i < len; i++) {
+       		 		tableData.push({
+       		 			"date" : ds[i].id,
 //                		"id": feat[i].id,
 //                		"mag": feat[i].properties.mag,
 //                		"title": feat[i].properties.title,
 //                		"lon": feat[i].geometry.coordinates[0],
 //                		"lat": feat[i].geometry.coordinates[1]
-//            		});
-//        		}
+            		});
+        		}
 
         		table.appendRows(tableData);
         		doneCallback();
