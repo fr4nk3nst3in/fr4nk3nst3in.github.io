@@ -29,15 +29,15 @@
             	tableData = [];
 
         		// Iterate over the JSON object
-        		for (var i = 0, len = Time Series (Daily).length; i < len; i++) {
-            		tableData.push({
-                		"id": feat[i].id,
-                		"mag": feat[i].properties.mag,
-                		"title": feat[i].properties.title,
-                		"lon": feat[i].geometry.coordinates[0],
-                		"lat": feat[i].geometry.coordinates[1]
-            		});
-        		}
+//       		for (var i = 0, len = Time Series (Daily).length; i < len; i++) {
+//            		tableData.push({
+//                		"id": feat[i].id,
+//                		"mag": feat[i].properties.mag,
+//                		"title": feat[i].properties.title,
+//                		"lon": feat[i].geometry.coordinates[0],
+//                		"lat": feat[i].geometry.coordinates[1]
+//            		});
+//        		}
 
         		table.appendRows(tableData);
         		doneCallback();
