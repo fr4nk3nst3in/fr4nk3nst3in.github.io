@@ -9,7 +9,7 @@
         	{ id : "open", alias : "open",  columnRole: "measure", dataType : tableau.dataTypeEnum.float  },
         	{ id : "high", alias : "high",  columnRole: "measure", dataType : tableau.dataTypeEnum.float },
         	{ id : "low", alias : "low", columnRole: "measure", dataType : tableau.dataTypeEnum.float },
-        	{ id : "close", alias : "close",columnRole: "measure", dataType : tableau.dataTypeEnum.float }
+        	{ id : "close", alias : "close",columnRole: "measure", dataType : tableau.dataTypeEnum.float },
         	{ id : "volume", alias : "volume",columnRole: "measure", dataType : tableau.dataTypeEnum.int }
     	];
 
