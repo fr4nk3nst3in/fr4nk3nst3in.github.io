@@ -4,7 +4,6 @@
     myConnector.getSchema = function (schemaCallback) {
     
      	var cols = [
-     		date, open, high, low, close, volume
      	
         	{ id : "date", alias : "date", columnRole: "dimension",  dataType : tableau.dataTypeEnum.date },
         	{ id : "open", alias : "open",  columnRole: "measure", dataType : tableau.dataTypeEnum.float  },
