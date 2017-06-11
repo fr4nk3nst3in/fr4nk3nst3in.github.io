@@ -31,12 +31,13 @@
         		// Iterate over the JSON object
        		for (var i = 0, len = ds.length; i < len; i++) {
        		 		tableData.push({
-       		 			"date" : ds[i].id,
-//                		"id": feat[i].id,
-//                		"mag": feat[i].properties.mag,
-//                		"title": feat[i].properties.title,
-//                		"lon": feat[i].geometry.coordinates[0],
-//                		"lat": feat[i].geometry.coordinates[1]
+       		 			"date" : ds[i],
+                		"open":  ds[i]['1. open'],
+                 		"high":  ds[i]['2. high'],
+                		"low":   ds[i]['3. low'],
+                		"close": ds[i]['4. close'],
+                		"volume":ds[i]['5. volume']
+
             		});
         		}
 
