@@ -27,6 +27,7 @@
 		$.getJSON("http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=RHT&apikey=KIO2ZPVEEHLOKGAZ", function(resp) {
         		var feat = resp.features,
             	tableData = [];
+//TODO: Implement reading data and copy to tableDate
 
         		// Iterate over the JSON object
 //       		for (var i = 0, len = Time Series (Daily).length; i < len; i++) {
@@ -48,9 +49,8 @@
         // Create event listeners for when the user submits the form
     
     $(document).ready(function() {
-//        translateButton();
         $("#submitButton").click(function() {
-            tableau.connectionName = "get data"; // This will be the data source name in Tableau
+            tableau.connectionName = "alphavantage"; // This will be the data source name in Tableau
             tableau.submit(); // This sends the connector object to Tableau
         });
     });
