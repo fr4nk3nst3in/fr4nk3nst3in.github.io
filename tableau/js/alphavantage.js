@@ -15,7 +15,7 @@
 
     	var tableInfo = {
         	id : "alphavantage",
-        	alias : "historical symbol data from alphavantage",
+        	alias : "historical data",
         	columns : cols
     	};
 
